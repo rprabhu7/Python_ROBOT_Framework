@@ -1,0 +1,6 @@
+projectKey=pythonProject_Robot
+serverUrl=http://localhost:9000
+serverVersion=10.7.0.96327
+dashboardUrl=http://localhost:9000/dashboard?id=pythonProject_Robot
+ceTaskId=f9116a9b-b134-43ef-ad3e-77191550bf14
+ceTaskUrl=http://localhost:9000/api/ce/task?id=f9116a9b-b134-43ef-ad3e-77191550bf14

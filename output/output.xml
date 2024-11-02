@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.6 on win32)" generated="2024-10-29T19:39:24.258398" rpa="false" schemaversion="5">
+<suite id="s1" name="Example Test" source="D:\Python_ROBOT_Framework\pythonProject_Robot\Testcases\example_test.robot">
+<test id="s1-t1" name="Example Test Case" line="5">
+<kw name="My Function" owner="MyLibrary">
+<msg time="2024-10-29T19:39:24.309262" level="INFO">${greeting} = Hello, World</msg>
+<var>${greeting}</var>
+<arg>World</arg>
+<status status="PASS" start="2024-10-29T19:39:24.308263" elapsed="0.000999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-10-29T19:39:24.309262" level="INFO">Hello, World</msg>
+<arg>${greeting}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-10-29T19:39:24.309262" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-29T19:39:24.306247" elapsed="0.004035"/>
+</test>
+<status status="PASS" start="2024-10-29T19:39:24.260399" elapsed="0.051862"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Example Test">Example Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

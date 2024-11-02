@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.6 on win32)" generated="2024-11-02T14:32:04.235534" rpa="false" schemaversion="5">
+<suite id="s1" name="pythonProject Robot" source="D:\Python_ROBOT_Framework\pythonProject_Robot">
+<suite id="s1-s1" name="VideoGame API" source="D:\Python_ROBOT_Framework\pythonProject_Robot\VideoGame_API">
+<suite id="s1-s1-s1" name="TC1" source="D:\Python_ROBOT_Framework\pythonProject_Robot\VideoGame_API\TC1.robot">
+<test id="s1-s1-s1-t1" name="TC1 GET - return All videogames" line="7">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-11-02T14:32:04.524414" level="INFO">Creating Session using : alias=mysession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-11-02T14:32:04.524414" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-11-02T14:32:04.525326" level="INFO">${header} = {'Accept': 'application/json'}</msg>
+<var>${header}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.525326" elapsed="0.000000"/>
+</kw>
+<kw name="Get Request" owner="RequestsLibrary">
+<msg time="2024-11-02T14:32:04.525835" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2024-11-02T14:32:04.537250" level="INFO">GET Request : url=http://localhost:8080/app/videogames 
+ path_url=/app/videogames 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': 'application/json', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-11-02T14:32:04.538239" level="INFO">GET Response : url=http://localhost:8080/app/videogames 
+ status=200, reason= 
+ headers={'Content-Type': 'application/json', 'Content-Length': '1685', 'Date': 'Sat, 02 Nov 2024 09:02:04 GMT'} 
+ body=[{"id":1,"name":"Resident Evil 4","releaseDate":"2005-10-01","reviewScore":85,"category":"Shooter","rating":"Universal"},{"id":3,"name":"Resident Evil 10","releaseDate":"2005-10-01","reviewScore":90,"category":"driving","rating":"mature"},{"id":4,"name":"Super Mario 64","releaseDate":"1996-10-20","reviewScore":90,"category":"Platform","rating":"Universal"},{"id":5,"name":"The Legend of Zelda: Ocarina of Time","releaseDate":"1998-12-10","reviewScore":93,"category":"Adventure","rating":"PG-13"},{"id":6,"name":"Doom","releaseDate":"1993-02-18","reviewScore":81,"category":"Shooter","rating":"Mature"},{"id":7,"name":"Minecraft","releaseDate":"2011-12-05","reviewScore":77,"category":"Puzzle","rating":"Universal"},{"id":8,"name":"SimCity 2000","releaseDate":"1994-09-11","reviewScore":88,"category":"Strategy","rating":"Universal"},{"id":9,"name":"Final Fantasy VII","releaseDate":"1997-08-20","reviewScore":97,"category":"RPG","rating":"PG-13"},{"id":10,"name":"Grand Theft Auto III","releaseDate":"2001-04-23","reviewScore":90,"category":"Driving","rating":"Mature"},{"id":12,"name":"Resident Evil 5","releaseDate":"2005-10-02","reviewScore":85,"category":"Shooter","rating":"Universal"},{"id":13,"name":"Grand Theft Auto VII","releaseDate":"2014-04-25","reviewScore":96,"category":"Driving","rating":"Mature"},{"id":14,"name":"Grand Theft Auto VII","releaseDate":"2014-04-25","reviewScore":97,"category":"Driving","rating":"Mature"},{"id":15,"name":"Grand Theft Auto VII","releaseDate":"2014-04-25","reviewScore":97,"category":"Driving","rating":"Mature"},{"id":16,"name":"Grand Theft Auto VII","releaseDate":"2014-04-25","reviewScore":97,"category":"Driving","rating":"Mature"}] 
+ </msg>
+<msg time="2024-11-02T14:32:04.538302" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/app/videogames</arg>
+<arg>headers=${header}</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.525835" elapsed="0.012467"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.538504" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.538504" elapsed="0.001042"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-02T14:32:04.539546" level="INFO">${status_code} = 200</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.539546" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-02T14:32:04.539546" level="INFO">${body} = [{"id":1,"name":"Resident Evil 4","releaseDate":"2005-10-01","reviewScore":85,"category":"Shooter","rating":"Universal"},{"id":3,"name":"Resident Evil 10","releaseDate":"2005-10-01","reviewScore":90,"...</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.539546" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.540533" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${body}</arg>
+<arg>id</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.540533" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-02T14:32:04.523718" elapsed="0.016815"/>
+</test>
+<test id="s1-s1-s1-t2" name="TC3 GET - return Single game" line="31">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-11-02T14:32:04.541534" level="INFO">Creating Session using : alias=mysession, url=http://localhost:8080, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2024-11-02T14:32:04.540533" elapsed="0.001001"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-11-02T14:32:04.541534" level="INFO">${header} = {'Accept': 'application/json'}</msg>
+<var>${header}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.541534" elapsed="0.000000"/>
+</kw>
+<kw name="Get Request" owner="RequestsLibrary">
+<msg time="2024-11-02T14:32:04.541534" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2024-11-02T14:32:04.547536" level="INFO">GET Request : url=http://localhost:8080/app/videogames/1 
+ path_url=/app/videogames/1 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': 'application/json', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-11-02T14:32:04.547536" level="INFO">GET Response : url=http://localhost:8080/app/videogames/1 
+ status=200, reason= 
+ headers={'Content-Type': 'application/json', 'Content-Length': '119', 'Date': 'Sat, 02 Nov 2024 09:02:04 GMT'} 
+ body={"id":1,"name":"Resident Evil 4","releaseDate":"2005-10-01","reviewScore":85,"category":"Shooter","rating":"Universal"} 
+ </msg>
+<msg time="2024-11-02T14:32:04.547536" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/app/videogames/1</arg>
+<arg>headers=${header}</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.541534" elapsed="0.006002"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.548542" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.548542" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-02T14:32:04.549547" level="INFO">${status_code} = 200</msg>
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.549547" elapsed="0.000000"/>
+</kw>
+<kw name="Convert To String" owner="BuiltIn">
+<msg time="2024-11-02T14:32:04.549547" level="INFO">${body} = {"id":1,"name":"Resident Evil 4","releaseDate":"2005-10-01","reviewScore":85,"category":"Shooter","rating":"Universal"}</msg>
+<var>${body}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.549547" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.549547" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${body}</arg>
+<arg>Universal</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-11-02T14:32:04.549547" elapsed="0.001005"/>
+</kw>
+<status status="PASS" start="2024-11-02T14:32:04.540533" elapsed="0.010019"/>
+</test>
+<status status="PASS" start="2024-11-02T14:32:04.262672" elapsed="0.287880"/>
+</suite>
+<status status="PASS" start="2024-11-02T14:32:04.260659" elapsed="0.289893"/>
+</suite>
+<status status="PASS" start="2024-11-02T14:32:04.237784" elapsed="0.313773"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="pythonProject Robot">pythonProject Robot</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="VideoGame API">pythonProject Robot.VideoGame API</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="TC1">pythonProject Robot.VideoGame API.TC1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-02T14:32:04.188853" level="WARN">Error in file 'D:\Python_ROBOT_Framework\pythonProject_Robot\Resources\resources.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-11-02T14:32:04.525835" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2024-11-02T14:32:04.541534" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+</errors>
+</robot>

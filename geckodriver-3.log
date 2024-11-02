@@ -1,0 +1,19 @@
+1729694404074	geckodriver	INFO	Listening on 127.0.0.1:65232
+1729694407120	mozrunner::runner	INFO	Running command: "C:\\Users\\preet\\.cache\\selenium\\firefox\\win64\\131.0.3\\firefox.exe" "--marionette" "--remote-debuggin ... 3" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\preet\\AppData\\Local\\Temp\\rust_mozprofile2kcsYD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729694407394	Marionette	INFO	Marionette enabled
+1729694407512	Marionette	INFO	Listening on port 65244
+Read port: 65244
+WebDriver BiDi listening on ws://127.0.0.1:65233
+1729694407575	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65233/devtools/browser/d70945bb-538d-4d4e-8a62-8e9f6bb97570
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
+JavaScript warning: https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015, line 1: Script terminated by timeout at:
+104/T/<@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11632
+t@https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015:1:11507
+
+1729694412564	Marionette	INFO	Stopped listening on port 65244
+Dynamically enable window occlusion 1

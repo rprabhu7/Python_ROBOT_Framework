@@ -1,0 +1,27 @@
+1729694300122	geckodriver	INFO	Listening on 127.0.0.1:65069
+1729694303146	mozrunner::runner	INFO	Running command: "C:\\Users\\preet\\.cache\\selenium\\firefox\\win64\\131.0.3\\firefox.exe" "--marionette" "--remote-debuggin ... 0" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\preet\\AppData\\Local\\Temp\\rust_mozprofileB9MwTq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729694303433	Marionette	INFO	Marionette enabled
+1729694303637	Marionette	INFO	Listening on port 65080
+Read port: 65080
+WebDriver BiDi listening on ws://127.0.0.1:65070
+1729694303697	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65070/devtools/browser/e57f0115-df3b-4eba-b9ea-e371a4d9f06f
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 2: ReferenceError: $ is not defined
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 2: ReferenceError: $ is not defined
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 2: ReferenceError: $ is not defined
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 5: ReferenceError: AjaxCart is not defined
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 2: ReferenceError: $ is not defined
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 57: ReferenceError: $ is not defined
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 2: ReferenceError: $ is not defined
+JavaScript error: https://demo.nopcommerce.com/page-not-found line 1 > injectedScript, line 2: ReferenceError: $ is not defined
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-SCT41TW89V, line 178: Script terminated by timeout at:
+z@https://www.googletagmanager.com/gtag/js?id=G-SCT41TW89V:178:158
+OA@https://www.googletagmanager.com/gtag/js?id=G-SCT41TW89V:570:134
+PA/<@https://www.googletagmanager.com/gtag/js?id=G-SCT41TW89V:570:111
+c@https://demo.nopcommerce.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js:1:9405
+
+1729699287886	Marionette	INFO	Stopped listening on port 65080
+Dynamically enable window occlusion 1

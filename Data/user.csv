@@ -1,0 +1,5 @@
+${username};${password};
+standard_user;xyz;
+admin1;secret_sauce;
+admin2;${EMPTY};
+admin3;xyz;

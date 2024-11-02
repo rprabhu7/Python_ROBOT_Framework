@@ -1,0 +1,5 @@
+txt_loginUserName="name:user-name"
+txt_loginPassword="name:password"
+btn_login="name:login-button"
+btn_menu_bar="xpath://button[@id='react-burger-menu-btn']"
+link_logout="Logout"
